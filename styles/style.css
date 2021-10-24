@@ -353,16 +353,16 @@ section:nth-child(even) {
 }
 
 .promotions .row-banner {
+    position: relative;
     background: url(../assets/row-banner.png) no-repeat;
     height: 45rem;
     background-size: cover;
     background-position: center;
-    position: relative;
     margin-top: 1.5rem;
 }
 
 .promotions .row-banner .content {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 7%;
     transform: translateY(-50%);
@@ -385,58 +385,61 @@ section:nth-child(even) {
     font-size: 2rem;
     padding-bottom: 1rem;
     color: var(--logoBlack);
-    margin-bottom: 26rem;
 }
 
-.promotions .row-banner .grid-banner {
-    margin-top: 5rem;
+.promotions .grid-banner {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
 }
 
-.promotions .row-banner .grid-banner .grid {
+.promotions .grid-banner .grid {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
     height: 45rem;
 }
 
-.promotions .row-banner .grid-banner .grid img {
+.promotions .grid-banner .grid img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.promotions .row-banner .grid-banner .grid:hover img {
+.promotions .grid-banner .grid:hover img {
     transform: scale(1.2);
 }
 
-.promotions .row-banner .grid-banner .grid .content {
+.promotions .grid-banner .grid .content {
    position: absolute;
-   top: 10rem;
+   top: 4rem;
    padding: 0 2rem;
 }
 
-.promotions .row-banner .grid-banner .grid .content span {
+.promotions .grid-banner .grid .content span {
     font-size: 2.5rem;
     color: var(--white);
 }
 
-.promotions .row-banner .grid-banner .grid .content h3 {
+.promotions .grid-banner .grid .content h3 {
     font-size: 3rem;
     color: var(--white);
     padding-top: .5rem;
 }
 
-.promotions .row-banner .grid-banner .grid .content #span-center {
+.promotions .grid-banner .grid .content #span-center {
     color: var(--lightColor);
 }
 
-.promotions .row-banner .grid-banner .grid .content #h3-center {
+.promotions .grid-banner .grid .content #h3-center {
     color: var(--logoBlack);
 }
+
+
+
+
+
+
 
 
 
@@ -554,7 +557,7 @@ section:nth-child(even) {
         font-size: 5rem;
     }
 
-    .promotions .row-banner .grid-banner {
+    .promotions .grid-banner {
         grid-template-columns: auto auto;
         grid-template-rows: auto;
     }
@@ -565,7 +568,7 @@ section:nth-child(even) {
         font-size: 50%;
     }
 
-    .promotions .row-banner .grid-banner {
+    .promotions .grid-banner {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
     }
