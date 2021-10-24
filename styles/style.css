@@ -9,7 +9,6 @@
     --lightColor: #666;
     --white: #fff;
     --backgroundMenu: #eee;
-    --boxShadow: 0 .5rem 1.5rem rgba(0,0,0,.1)
 }
 
 * {
@@ -40,7 +39,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: var(--boxShadow);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
 }
 
 header a img {
@@ -372,7 +371,7 @@ section:nth-child(even) {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
     font-size: 4rem;
-    color: var(--logoBlack);
+    color: #23202F;
 }
 
 .promotions .row-banner .content h3 {
@@ -384,7 +383,7 @@ section:nth-child(even) {
 .promotions .row-banner .content p {
     font-size: 2rem;
     padding-bottom: 1rem;
-    color: var(--logoBlack);
+    color: #23202F;
 }
 
 .promotions .grid-banner {
@@ -418,34 +417,113 @@ section:nth-child(even) {
 
 .promotions .grid-banner .grid .content span {
     font-size: 2.5rem;
-    color: var(--white);
+    color: white;
 }
 
 .promotions .grid-banner .grid .content h3 {
     font-size: 3rem;
-    color: var(--white);
+    color: white;
     padding-top: .5rem;
 }
 
 .promotions .grid-banner .grid .content #span-center {
-    color: var(--lightColor);
+    color: #666;
 }
 
 .promotions .grid-banner .grid .content #h3-center {
-    color: var(--logoBlack);
+    color: #23202F;
 }
 
+.request .row {
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-radius: .5rem;
+}
 
+.request .row .image {
+    flex: 1 1 30rem;
+}
 
+.request .row .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
 
+.request .row form {
+    flex: 1 1 50rem;
+    padding: 1rem;
+}
 
+.request .row form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.request .row form .inputBox input, .request .row form textarea {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--lightColor);
+    text-transform: none;
+    outline: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    width: 49%;
+}
 
+.request .row form textarea {
+    width: 100%;
+    resize: none;
+    height: 15rem;
+}
 
+.request .row form .inputBox input:hover, .request .row form textarea:hover,
+.request .row form .inputBox input:focus, .request .row form textarea:focus  {
+    outline: .1rem solid var(--logoYellow);
+    border: 0;
+}
 
+.request .row form .btn {
+    background: none;
+    width: 100%;
+}
 
+.request .row form .btn:hover {
+    background-color: var(--logoYellow);
+}
 
+.footer {
+    background-color: var(--white);
+    box-shadow: 0 -.5rem 1.5rem rgba(0, 0, 0, .1);
+}
 
+.footer .social {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social img {
+    width: 4rem;
+}
+
+.footer .social img:hover {
+    opacity: .8;
+}
+
+.footer .copyright p {
+    display: flex;
+    justify-content: center;
+    color: var(--lightColor);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
 
 @media screen and (max-width: 1200px) {
     html {
@@ -571,6 +649,10 @@ section:nth-child(even) {
     .promotions .grid-banner {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
+    }
+
+    .request .row form .inputBox input {
+        width: 100%;
     }
 }
 
