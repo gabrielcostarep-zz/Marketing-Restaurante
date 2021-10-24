@@ -1,6 +1,6 @@
 💈 Exemplo de uma página para o marketing de uma barbearia. Desenvolvida no inicio da minha jornada como desenvolvedor web.
 
-➡️ [Acesse a página clicando aqui](https://gabrielcostarep.github.io/Marketing-Barbearia/) ⬅️
+➡️ [Acesse a página clicando aqui](https://gabrielcostarep.github.io/Marketing-Restaurante/) ⬅️
 
 <!--  <div align="center" >
   <img src="./Readme-gif.gif" alt="demo-web" width="1000em">
