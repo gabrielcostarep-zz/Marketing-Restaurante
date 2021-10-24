@@ -169,7 +169,7 @@ section:nth-child(even) {
 }
 
 .btn:hover {
-    color: var(--white);
+    color: white;
 }
 
 .btn:hover::before {
@@ -354,10 +354,11 @@ section:nth-child(even) {
 
 .promotions .row-banner {
     background: url(../assets/row-banner.png) no-repeat;
-    height: 40rem;
+    height: 45rem;
     background-size: cover;
     background-position: center;
     position: relative;
+    margin-top: 1.5rem;
 }
 
 .promotions .row-banner .content {
@@ -384,6 +385,7 @@ section:nth-child(even) {
     font-size: 2rem;
     padding-bottom: 1rem;
     color: var(--logoBlack);
+    margin-bottom: 26rem;
 }
 
 .promotions .row-banner .grid-banner {
@@ -391,13 +393,14 @@ section:nth-child(even) {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
+    gap: .5rem;
 }
 
 .promotions .row-banner .grid-banner .grid {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    height: 40rem;
+    height: 45rem;
 }
 
 .promotions .row-banner .grid-banner .grid img {
@@ -406,11 +409,34 @@ section:nth-child(even) {
     object-fit: cover;
 }
 
-.promotions .row-banner .grid-banner .grid .content {
-    position: absolute;
-    top: 0;
+.promotions .row-banner .grid-banner .grid:hover img {
+    transform: scale(1.2);
 }
 
+.promotions .row-banner .grid-banner .grid .content {
+   position: absolute;
+   top: 10rem;
+   padding: 0 2rem;
+}
+
+.promotions .row-banner .grid-banner .grid .content span {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.promotions .row-banner .grid-banner .grid .content h3 {
+    font-size: 3rem;
+    color: var(--white);
+    padding-top: .5rem;
+}
+
+.promotions .row-banner .grid-banner .grid .content #span-center {
+    color: var(--lightColor);
+}
+
+.promotions .row-banner .grid-banner .grid .content #h3-center {
+    color: var(--logoBlack);
+}
 
 
 
@@ -514,11 +540,34 @@ section:nth-child(even) {
     .home .home-slider .slide .content p {
         font-size: 1.9rem;
     }
+
+    .promotions .row-banner .content {
+        top: 35%;
+        transform: translateY(-35%);
+    }
+
+    .promotions .row-banner .content span {
+        font-size: 3rem;
+    }
+
+    .promotions .row-banner .content h3 {
+        font-size: 5rem;
+    }
+
+    .promotions .row-banner .grid-banner {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
 }
 
 @media screen and (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .promotions .row-banner .grid-banner {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
     }
 }
 
