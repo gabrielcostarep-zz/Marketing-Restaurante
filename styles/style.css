@@ -5,7 +5,6 @@
 :root {
     --logoYellow: #DDB343;
     --logoBlack: #23202F;
-    --black: #192a56;
     --lightColor: #666;
     --white: #fff;
     --backgroundMenu: #eee;
@@ -60,7 +59,7 @@ header .navbar a {
 
 header .navbar a.active, 
 header .navbar a:hover {
-    color: var(--white);
+    color: white;
     background-color: var(--logoYellow);
 }
 
@@ -120,8 +119,8 @@ header #label-dark::after {
 }
 
 header .icons input:checked ~ #label-dark {
-    background-color: var(--logoBlack);
-    box-shadow: rgba(255, 255, 255, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
 }
 
 header input:checked ~ #label-dark::after {
@@ -232,6 +231,10 @@ section:nth-child(even) {
     padding-bottom: 2rem;
     text-transform: uppercase;
  }
+
+.dishes {
+    background-color: var(--white);
+}
 
 .dishes .box-container {
     display: flex;
@@ -349,6 +352,10 @@ section:nth-child(even) {
 .about .row .content .icons-content .icons span {
     font-size: 1.5rem;
     color: var(--logoBlack);
+}
+
+.promotions {
+    background-color: var(--white);
 }
 
 .promotions .row-banner {
@@ -476,6 +483,7 @@ section:nth-child(even) {
     outline: .1rem solid rgba(0, 0, 0, .3);
     border-radius: .5rem;
     width: 49%;
+    background-color: var(--white);
 }
 
 .request .row form textarea {

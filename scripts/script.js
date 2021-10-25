@@ -1,3 +1,5 @@
+let html = document.querySelector("html")
+let checkbox = document.querySelector("input[name=theme]")
 let menu = document.getElementById("menu-bars")
 let navbar = document.getElementsByClassName("navbar")[0]
 let menuOpen = false
@@ -78,3 +80,35 @@ function fadeOut() {
 }
 
 window.onload = fadeOut
+
+let getStyle = (element, style) =>
+    window
+        .getComputedStyle(element)
+        .getPropertyValue(style)
+
+
+let initialColors = {
+    lightColor: getStyle(html, "--lightColor"),
+    white: getStyle(html, "--white"),
+    backgroundMenu: getStyle(html, "--backgroundMenu"),
+}
+
+let darkMode = {
+    white: "#eee",
+    backgroundMenu: "#DBDBDB",
+    lightColor: "#616161",
+}
+
+let transformKey = (key) =>
+    "--" + key
+
+
+let changeColors = (colors) => {
+    Object.keys(colors).map(key => {
+        html.style.setProperty(transformKey(key), colors[key])
+    })
+}
+
+checkbox.addEventListener("change", ({ target }) => {
+    target.checked ? changeColors(darkMode) : changeColors(initialColors)
+})
