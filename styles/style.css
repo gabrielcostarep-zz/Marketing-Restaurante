@@ -113,7 +113,7 @@ header #label-dark::after {
     left: 3px;
     width: 20px;
     height: 20px;
-    background-color: var(--logoYellow);
+    background-color: var(--lightColor);
     border-radius: 10px;
     transition: .3s;
 }
@@ -124,6 +124,7 @@ header .icons input:checked ~ #label-dark {
 }
 
 header input:checked ~ #label-dark::after {
+    background-color: var(--logoYellow);
     left: calc(100% - 3px);
     transform: translateX(-100%);
 }
