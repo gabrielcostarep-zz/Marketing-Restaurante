@@ -3,6 +3,7 @@
 ➡️ [Acesse a página clicando aqui](https://gabrielcostarep.github.io/Marketing-Restaurante/) ⬅️
 
  <div align="center" >
+ <img src="./readme-gif/Readme-gif.gif" alt="demo-web" width="1000em">
   <img src="./readme-gif/Readme-cell-gif.gif" alt="demo-mobile" height="500em">
 </div>
 
