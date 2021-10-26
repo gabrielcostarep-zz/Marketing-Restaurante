@@ -321,7 +321,7 @@ section:nth-child(even) {
 .about .row .content .btn {
     display: flex;
     justify-content: center;
-    margin: 0 .5rem;
+    margin: 0 .1rem;
 }
 
 .about .row .content .icons-content {
@@ -342,7 +342,7 @@ section:nth-child(even) {
     border-radius: .5rem;
     border: .1rem solid rgba(0, 0, 0, .2);
     padding: 1.5rem;
-    margin: .5rem .5rem 0 .5rem;
+    margin: .1rem .1rem 0 .1rem;
 }
 
 .about .row .content .icons-content .icons img {
